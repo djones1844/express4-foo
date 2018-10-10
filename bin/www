@@ -23,7 +23,8 @@ let httpsOptions = {
 }
 
 /**
- * Create HTTPS server and bind events
+ * Create HTTPS 
+ * Listen on provided port, on all network interfaces.
  */
 var server = https.createServer(httpsOptions, app)
   .listen(port)
